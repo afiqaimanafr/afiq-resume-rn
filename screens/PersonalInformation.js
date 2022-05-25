@@ -12,6 +12,14 @@ function PersonalInformation() {
 export default PersonalInformation;
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: GlobalStyles.colors.slateBlue },
-  text: { color: GlobalStyles.colors.midnightBlue },
+  container: {
+    flex: 1,
+    backgroundColor: GlobalStyles.colors.midnightBlue,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  text: {
+    color: GlobalStyles.colors.lightBlue,
+    fontSize: 24,
+  },
 });
