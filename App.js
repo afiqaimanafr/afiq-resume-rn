@@ -1,5 +1,5 @@
-import { StyleSheet, Platform } from "react-native";
-import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Platform, StatusBar } from "react-native";
+import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -14,7 +14,7 @@ const Tab = createMaterialTopTabNavigator();
 export default function App() {
   return (
     <>
-      <StatusBar style="auto" />
+      <ExpoStatusBar style="auto" />
       <SafeAreaProvider style={styles.screen}>
         <NavigationContainer>
           <Tab.Navigator>
@@ -32,5 +32,5 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, marginTop: isAndroid ? 20 : 0 },
+  screen: { flex: 1, marginTop: StatusBar.currentHeight },
 });
