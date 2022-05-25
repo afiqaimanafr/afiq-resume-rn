@@ -12,6 +12,6 @@ function PersonalInformation() {
 export default PersonalInformation;
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: GlobalStyles.colors.navy },
-  text: { color: GlobalStyles.colors.lightCyan },
+  container: { flex: 1, backgroundColor: GlobalStyles.colors.slateBlue },
+  text: { color: GlobalStyles.colors.midnightBlue },
 });
